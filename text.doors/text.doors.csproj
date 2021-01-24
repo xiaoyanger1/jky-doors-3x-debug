@@ -32,7 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>acroread2.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AForge, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
@@ -182,12 +183,6 @@
     <Compile Include="Detection\ExportReport.Designer.cs">
       <DependentUpon>ExportReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="Detection\RealTimeSurveillance.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Detection\RealTimeSurveillance.Designer.cs">
-      <DependentUpon>RealTimeSurveillance.cs</DependentUpon>
-    </Compile>
     <Compile Include="Detection\Select_Code.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,9 +244,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Detection\PIDManager.resx">
       <DependentUpon>PIDManager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Detection\RealTimeSurveillance.resx">
-      <DependentUpon>RealTimeSurveillance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Detection\Select_Code.resx">
       <DependentUpon>Select_Code.cs</DependentUpon>
@@ -319,7 +311,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="acroread.ico" />
-    <Content Include="acroread2.ico" />
     <Content Include="readme\readme.txt" />
     <Content Include="Sql\dt_kfy_Info_sql.txt" />
   </ItemGroup>

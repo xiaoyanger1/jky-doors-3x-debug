@@ -81,7 +81,7 @@ namespace text.doors.Detection
                     this.btn_select.Enabled = true;
                     this.btn_delete.Enabled = true;
                     this.btn_Ok.Enabled = true;
-                    this.Close();
+                    //this.Close();
                 }
             }
             catch (Exception ex)
@@ -91,10 +91,7 @@ namespace text.doors.Detection
             }
         }
 
-        private object Getdt_Info()
-        {
-            throw new NotImplementedException();
-        }
+   
         public void GetDangHaoTrigger()
         {
             //获取樘号

@@ -314,7 +314,6 @@
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(92, 33);
             this.toolStripButton4.Text = "关于系统";
-            this.toolStripButton4.Visible = false;
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // ms_emun
@@ -344,33 +343,33 @@
             // tms_DetectionSet
             // 
             this.tms_DetectionSet.Name = "tms_DetectionSet";
-            this.tms_DetectionSet.Size = new System.Drawing.Size(136, 22);
+            this.tms_DetectionSet.Size = new System.Drawing.Size(180, 22);
             this.tms_DetectionSet.Text = "检测设定";
             this.tms_DetectionSet.Click += new System.EventHandler(this.tms_DetectionSet_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(133, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
             // 
             // 气密监控ToolStripMenuItem
             // 
             this.气密监控ToolStripMenuItem.Name = "气密监控ToolStripMenuItem";
-            this.气密监控ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.气密监控ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.气密监控ToolStripMenuItem.Text = "气密监控";
             this.气密监控ToolStripMenuItem.Click += new System.EventHandler(this.气密监控ToolStripMenuItem_Click);
             // 
             // 水密监控ToolStripMenuItem
             // 
             this.水密监控ToolStripMenuItem.Name = "水密监控ToolStripMenuItem";
-            this.水密监控ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.水密监控ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.水密监控ToolStripMenuItem.Text = "水密监控";
             this.水密监控ToolStripMenuItem.Click += new System.EventHandler(this.水密监控ToolStripMenuItem_Click);
             // 
             // 抗风压监控ToolStripMenuItem
             // 
             this.抗风压监控ToolStripMenuItem.Name = "抗风压监控ToolStripMenuItem";
-            this.抗风压监控ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.抗风压监控ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.抗风压监控ToolStripMenuItem.Text = "抗风压监控";
             this.抗风压监控ToolStripMenuItem.Click += new System.EventHandler(this.抗风压监控ToolStripMenuItem_Click);
             // 
@@ -385,7 +384,7 @@
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(124, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem4.Text = "综合评定";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
@@ -405,40 +404,40 @@
             // tsm_sensorSet
             // 
             this.tsm_sensorSet.Name = "tsm_sensorSet";
-            this.tsm_sensorSet.Size = new System.Drawing.Size(136, 22);
+            this.tsm_sensorSet.Size = new System.Drawing.Size(180, 22);
             this.tsm_sensorSet.Text = "传感器标定";
             this.tsm_sensorSet.Click += new System.EventHandler(this.tsm_sensorSet_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(136, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem3.Text = "系统设置";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(133, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
             // 
             // tsm_UpdatePassWord
             // 
             this.tsm_UpdatePassWord.Name = "tsm_UpdatePassWord";
-            this.tsm_UpdatePassWord.Size = new System.Drawing.Size(136, 22);
+            this.tsm_UpdatePassWord.Size = new System.Drawing.Size(180, 22);
             this.tsm_UpdatePassWord.Text = "修改密码";
             this.tsm_UpdatePassWord.Click += new System.EventHandler(this.tsm_UpdatePassWord_Click);
             // 
             // tsm_close
             // 
             this.tsm_close.Name = "tsm_close";
-            this.tsm_close.Size = new System.Drawing.Size(136, 22);
+            this.tsm_close.Size = new System.Drawing.Size(180, 22);
             this.tsm_close.Text = "关闭系统";
             this.tsm_close.Click += new System.EventHandler(this.tsm_close_Click);
             // 
             // pID设定ToolStripMenuItem
             // 
             this.pID设定ToolStripMenuItem.Name = "pID设定ToolStripMenuItem";
-            this.pID设定ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.pID设定ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pID设定ToolStripMenuItem.Text = "PID设定";
             this.pID设定ToolStripMenuItem.Click += new System.EventHandler(this.pID设定ToolStripMenuItem_Click);
             // 

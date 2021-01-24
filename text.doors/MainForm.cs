@@ -180,15 +180,6 @@ namespace text.doors
             ds.TopLevel = false;
             ds.Parent = this.pl_showItem;
             ds.Show();
-
-
-            //new AirtightDetection().Dispose();
-            // new WatertightDetection().Dispose();
-            //new WindPressureDetection().Dispose();
-
-            //new AirtightDetection().StopTimer();
-            //new WatertightDetection().StopTimer();
-            //new WindPressureDetection().StopTimer();
         }
 
         /// <summary>
@@ -196,16 +187,13 @@ namespace text.doors
         /// </summary>
         private void ShowWatertightDetection()
         {
-            WatertightDetection rts = new WatertightDetection(tcpClient, _tempCode, _tempTong);
             this.pl_showItem.Controls.Clear();
+            WatertightDetection rts = new WatertightDetection(tcpClient, _tempCode, _tempTong);
             rts.TopLevel = false;
             rts.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             rts.Parent = this.pl_showItem;
             rts.Show();
 
-            //new AirtightDetection().StopTimer();
-            //new WatertightDetection().InitTimer();
-            //new WindPressureDetection().StopTimer();
         }
         /// <summary>
         /// 气密监控
@@ -215,14 +203,10 @@ namespace text.doors
             AirtightDetection rts = new AirtightDetection(tcpClient, _tempCode, _tempTong);
             this.pl_showItem.Controls.Clear();
             rts.TopLevel = false;
-            rts.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            //rts.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             rts.Parent = this.pl_showItem;
             rts.Show();
 
-
-            //new AirtightDetection().InitTimer();
-            //new WatertightDetection().StopTimer();
-            //new WindPressureDetection().StopTimer();
         }
         /// <summary>
         /// 抗风压
@@ -236,13 +220,6 @@ namespace text.doors
             rts.Parent = this.pl_showItem;
             rts.Show();
 
-            //new AirtightDetection().Dispose();
-            //new WatertightDetection().Dispose();
-            //new DetectionSet().Dispose();
-
-            //new AirtightDetection().StopTimer();
-            //new WatertightDetection().StopTimer();
-            //new WindPressureDetection().InitTimer();
         }
 
 

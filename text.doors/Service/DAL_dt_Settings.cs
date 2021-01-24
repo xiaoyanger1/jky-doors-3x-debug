@@ -171,7 +171,27 @@ namespace text.doors.dal
             return dr.Table;
         }
 
+        public List<DictName> GetCodeList()
+        {
+            List<DictName> lis = new List<DictName>();
+            string sql = "select distinct dt_code from  dt_settings order by dt_Create desc";
 
+            var dr = SQLiteHelper.ExecuteDataRow(sql);
+            if (dr != null)
+            {
+                var dt = dr.Table;
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    lis.Add(new DictName()
+                    {
+                        name = dt.Rows[i]["dt_code"].ToString(),
+                        id = i
+                    });
+                }
+            }
+            return lis;
+
+        }
         /// <summary>
         /// 获取本次检测的结果
         /// </summary>

@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Ok = new System.Windows.Forms.Button();
             this.btn_Close = new System.Windows.Forms.Button();
-            this.txt_Code = new System.Windows.Forms.TextBox();
+            this.cbb_code = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -64,19 +64,23 @@
             this.btn_Close.UseVisualStyleBackColor = true;
             this.btn_Close.Click += new System.EventHandler(this.btn_Clone_Click);
             // 
-            // txt_Code
+            // cbb_code
             // 
-            this.txt_Code.Location = new System.Drawing.Point(27, 87);
-            this.txt_Code.Name = "txt_Code";
-            this.txt_Code.Size = new System.Drawing.Size(268, 21);
-            this.txt_Code.TabIndex = 2;
+            this.cbb_code.FormattingEnabled = true;
+            this.cbb_code.Items.AddRange(new object[] {
+            "是",
+            "否"});
+            this.cbb_code.Location = new System.Drawing.Point(27, 56);
+            this.cbb_code.Name = "cbb_code";
+            this.cbb_code.Size = new System.Drawing.Size(175, 20);
+            this.cbb_code.TabIndex = 247;
             // 
             // Select_Code
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 120);
-            this.Controls.Add(this.txt_Code);
+            this.Controls.Add(this.cbb_code);
             this.Controls.Add(this.btn_Close);
             this.Controls.Add(this.btn_Ok);
             this.Controls.Add(this.label1);
@@ -97,6 +101,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Ok;
         private System.Windows.Forms.Button btn_Close;
-        private System.Windows.Forms.TextBox txt_Code;
+        private System.Windows.Forms.ComboBox cbb_code;
     }
 }

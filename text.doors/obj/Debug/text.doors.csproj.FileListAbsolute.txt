@@ -143,7 +143,6 @@ E:\08-GitHub\jky-doors-3x-debug\text.doors\obj\Debug\text.doors.Detection.Detect
 E:\08-GitHub\jky-doors-3x-debug\text.doors\obj\Debug\text.doors.Detection.ExportReport.resources
 E:\08-GitHub\jky-doors-3x-debug\text.doors\obj\Debug\text.doors.Detection.TakePhotos.resources
 E:\08-GitHub\jky-doors-3x-debug\text.doors\obj\Debug\text.doors.Detection.PIDManager.resources
-E:\08-GitHub\jky-doors-3x-debug\text.doors\obj\Debug\text.doors.Detection.RealTimeSurveillance.resources
 E:\08-GitHub\jky-doors-3x-debug\text.doors\obj\Debug\text.doors.Detection.Select_Code.resources
 E:\08-GitHub\jky-doors-3x-debug\text.doors\obj\Debug\text.doors.Detection.SensorSet.resources
 E:\08-GitHub\jky-doors-3x-debug\text.doors\obj\Debug\text.doors.Detection.SystemManager.resources
