@@ -1293,7 +1293,7 @@ namespace text.doors.Detection
                 System.Drawing.Point[] points2 = new System.Drawing.Point[9];
                 Pen mypen3 = new Pen(Color.Black, 1);
 
-                for (int i = 0; fitem.Count < 9; i++)
+                for (int i = 0; i < 9; i++)
                 {
 
                     points2[i].X = Convert.ToInt32(initialx - fitem[i] * 10 * 1.5);
