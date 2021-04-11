@@ -174,7 +174,7 @@ namespace text.doors
         private void ShowDetectionSet()
         {
             this.pl_showItem.Controls.Clear();
-            DetectionSet ds = new DetectionSet(_temperature, _temppressure, _tempCode, _tempTong);
+            DetectionSet ds = new DetectionSet(tcpClient, _temperature, _temppressure, _tempCode, _tempTong);
             ds.deleBottomTypeEvent += new DetectionSet.deleBottomType(SelectDangHao);
             ds.GetDangHaoTrigger();
             ds.TopLevel = false;

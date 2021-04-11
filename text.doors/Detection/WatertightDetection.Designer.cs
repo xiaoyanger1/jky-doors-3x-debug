@@ -136,7 +136,7 @@
             this.page_watertight.Controls.Add(this.groupBox7);
             this.page_watertight.Location = new System.Drawing.Point(4, 30);
             this.page_watertight.Name = "page_watertight";
-            this.page_watertight.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.page_watertight.Padding = new System.Windows.Forms.Padding(3);
             this.page_watertight.Size = new System.Drawing.Size(1143, 587);
             this.page_watertight.TabIndex = 1;
             this.page_watertight.Text = "水密监控";
@@ -459,7 +459,7 @@
             // 
             // txt_maxValue
             // 
-            this.txt_maxValue.Location = new System.Drawing.Point(145, 15);
+            this.txt_maxValue.Location = new System.Drawing.Point(143, 16);
             this.txt_maxValue.Name = "txt_maxValue";
             this.txt_maxValue.Size = new System.Drawing.Size(52, 21);
             this.txt_maxValue.TabIndex = 12;
@@ -470,7 +470,7 @@
             // 
             this.btn_tzbd.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_tzbd.Location = new System.Drawing.Point(200, 47);
-            this.btn_tzbd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_tzbd.Margin = new System.Windows.Forms.Padding(2);
             this.btn_tzbd.Name = "btn_tzbd";
             this.btn_tzbd.Size = new System.Drawing.Size(71, 21);
             this.btn_tzbd.TabIndex = 10;
@@ -482,8 +482,8 @@
             // btn_ksbd
             // 
             this.btn_ksbd.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_ksbd.Location = new System.Drawing.Point(199, 15);
-            this.btn_ksbd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_ksbd.Location = new System.Drawing.Point(211, 0);
+            this.btn_ksbd.Margin = new System.Windows.Forms.Padding(2);
             this.btn_ksbd.Name = "btn_ksbd";
             this.btn_ksbd.Size = new System.Drawing.Size(71, 24);
             this.btn_ksbd.TabIndex = 11;
@@ -508,7 +508,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(83, 18);
+            this.label5.Location = new System.Drawing.Point(81, 19);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 12);
@@ -528,11 +528,11 @@
             // btn_upKpa
             // 
             this.btn_upKpa.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_upKpa.Location = new System.Drawing.Point(163, 13);
+            this.btn_upKpa.Location = new System.Drawing.Point(161, 14);
             this.btn_upKpa.Name = "btn_upKpa";
             this.btn_upKpa.Size = new System.Drawing.Size(74, 23);
             this.btn_upKpa.TabIndex = 2;
-            this.btn_upKpa.Text = "依次加压";
+            this.btn_upKpa.Text = "以此加压";
             this.btn_upKpa.UseVisualStyleBackColor = true;
             this.btn_upKpa.Click += new System.EventHandler(this.btn_upKpa_Click);
             // 
@@ -616,7 +616,7 @@
             this.rdb_wdjy.AutoSize = true;
             this.rdb_wdjy.Checked = true;
             this.rdb_wdjy.Location = new System.Drawing.Point(77, 1);
-            this.rdb_wdjy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdb_wdjy.Margin = new System.Windows.Forms.Padding(2);
             this.rdb_wdjy.Name = "rdb_wdjy";
             this.rdb_wdjy.Size = new System.Drawing.Size(75, 16);
             this.rdb_wdjy.TabIndex = 21;
@@ -638,7 +638,7 @@
             // 
             this.rdb_bdjy.AutoSize = true;
             this.rdb_bdjy.Location = new System.Drawing.Point(178, 0);
-            this.rdb_bdjy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdb_bdjy.Margin = new System.Windows.Forms.Padding(2);
             this.rdb_bdjy.Name = "rdb_bdjy";
             this.rdb_bdjy.Size = new System.Drawing.Size(75, 16);
             this.rdb_bdjy.TabIndex = 22;
