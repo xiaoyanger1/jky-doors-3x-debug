@@ -255,7 +255,7 @@ namespace text.doors.Detection
                 if (!IsSeccess)
                 {
                     //todo
-                    // MessageBox.Show("获取差压异常--风压画图！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    // MessageBox.Show("获取差压异常--风压画图！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 AnimateSeries(this.tChart_qm, value);
@@ -270,14 +270,14 @@ namespace text.doors.Detection
             var res = _tcpClient.Send_FY_Btn(BFMCommand.风压正压预备);
             if (!res)
             {
-                MessageBox.Show("正压预备异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("正压预备异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             var IsSeccess = false;
             double yl = _tcpClient.Read_FY_Btn_SetValue(ref IsSeccess, "ZYYB");
             if (!IsSeccess)
             {
-                MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             lbl_setYL.Text = yl.ToString();
@@ -297,7 +297,7 @@ namespace text.doors.Detection
             var res = _tcpClient.Send_FY_Btn(BFMCommand.风压正压开始);
             if (!res)
             {
-                MessageBox.Show("正压开始异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("正压开始异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -305,7 +305,7 @@ namespace text.doors.Detection
             double yl = _tcpClient.Read_FY_Btn_SetValue(ref IsSeccess, "ZYKS");
             if (!IsSeccess)
             {
-                MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             lbl_setYL.Text = yl.ToString();
@@ -326,14 +326,14 @@ namespace text.doors.Detection
             var res = _tcpClient.Send_FY_Btn(BFMCommand.风压负压预备, false);
             if (!res)
             {
-                MessageBox.Show("负压预备异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("负压预备异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             var IsSeccess = false;
             double yl = _tcpClient.Read_FY_Btn_SetValue(ref IsSeccess, "FYYB");
             if (!IsSeccess)
             {
-                MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             lbl_setYL.Text = yl.ToString();
@@ -353,14 +353,14 @@ namespace text.doors.Detection
             var res = _tcpClient.Send_FY_Btn(BFMCommand.风压负压开始, false);
             if (!res)
             {
-                MessageBox.Show("负压开始异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("负压开始异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             var IsSeccess = false;
             double yl = _tcpClient.Read_FY_Btn_SetValue(ref IsSeccess, "FYKS");
             if (!IsSeccess)
             {
-                MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             lbl_setYL.Text = yl.ToString();
@@ -587,7 +587,7 @@ namespace text.doors.Detection
             var res = _tcpClient.Set_FY_Value(BFMCommand.正反复数值, BFMCommand.正反复, value);
             if (!res)
             {
-                MessageBox.Show("正反复异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("正反复异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -609,7 +609,7 @@ namespace text.doors.Detection
             var res = _tcpClient.Set_FY_Value(BFMCommand.负反复数值, BFMCommand.负反复, value, false);
             if (!res)
             {
-                MessageBox.Show("负反复异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("负反复异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -631,7 +631,7 @@ namespace text.doors.Detection
             var res = _tcpClient.Set_FY_Value(BFMCommand.正安全数值, BFMCommand.正安全, value);
             if (!res)
             {
-                MessageBox.Show("正安全异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("正安全异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             windPressureTest = PublicEnum.WindPressureTest.ZSafety;
@@ -655,7 +655,7 @@ namespace text.doors.Detection
             var res = _tcpClient.Set_FY_Value(BFMCommand.负安全数值, BFMCommand.负安全, value, false);
             if (!res)
             {
-                MessageBox.Show("负安全异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("负安全异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             windPressureTest = PublicEnum.WindPressureTest.FSafety;
@@ -778,7 +778,7 @@ namespace text.doors.Detection
                 double yl = _tcpClient.Read_FY_Btn_SetValue(ref IsSeccess, "FYKS");
                 if (!IsSeccess)
                 {
-                    MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 lbl_setYL.Text = "-" + yl.ToString();
@@ -838,7 +838,7 @@ namespace text.doors.Detection
                 double yl = _tcpClient.Read_FY_Btn_SetValue(ref IsSeccess, "ZYKS");
                 if (!IsSeccess)
                 {
-                    MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 lbl_setYL.Text = yl.ToString();
@@ -1050,7 +1050,7 @@ namespace text.doors.Detection
                 int value = _tcpClient.Read_FY_BtnType(BFMCommand.风压正压预备结束, ref IsSeccess);
                 if (!IsSeccess)
                 {
-                    MessageBox.Show("风压正压预备结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    MessageBox.Show("风压正压预备结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (value == 3)
@@ -1067,7 +1067,7 @@ namespace text.doors.Detection
 
                 if (!IsSeccess)
                 {
-                    MessageBox.Show("风压正压开始结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    MessageBox.Show("风压正压开始结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (value >= 15)
@@ -1085,7 +1085,7 @@ namespace text.doors.Detection
 
                 if (!IsSeccess)
                 {
-                    MessageBox.Show("风压负压预备结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    MessageBox.Show("风压负压预备结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (value == 3)
@@ -1102,7 +1102,7 @@ namespace text.doors.Detection
 
                 if (!IsSeccess)
                 {
-                    MessageBox.Show("风压负压开始结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    MessageBox.Show("风压负压开始结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (value >= 15)
@@ -1118,7 +1118,7 @@ namespace text.doors.Detection
                 int value = _tcpClient.Read_FY_BtnType(BFMCommand.正反复结束, ref IsSeccess);
                 if (!IsSeccess)
                 {
-                    MessageBox.Show("正反复结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    MessageBox.Show("正反复结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (value == 5)
@@ -1133,7 +1133,7 @@ namespace text.doors.Detection
                 int value = _tcpClient.Read_FY_BtnType(BFMCommand.负反复结束, ref IsSeccess);
                 if (!IsSeccess)
                 {
-                    MessageBox.Show("负反复结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    MessageBox.Show("负反复结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (value == 5)
@@ -1148,7 +1148,7 @@ namespace text.doors.Detection
                 int value = _tcpClient.Read_FY_BtnType(BFMCommand.正安全结束, ref IsSeccess);
                 if (!IsSeccess)
                 {
-                    MessageBox.Show("正安全结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    MessageBox.Show("正安全结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (value == 1)
@@ -1163,7 +1163,7 @@ namespace text.doors.Detection
                 int value = _tcpClient.Read_FY_BtnType(BFMCommand.负安全结束, ref IsSeccess);
                 if (!IsSeccess)
                 {
-                    MessageBox.Show("负安全结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    MessageBox.Show("负安全结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (value == 1)
@@ -1223,7 +1223,7 @@ namespace text.doors.Detection
         {
             var res = _tcpClient.Stop();
             if (!res)
-                MessageBox.Show("急停异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("急停异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void tim_view_Tick(object sender, EventArgs e)
@@ -1260,13 +1260,13 @@ namespace text.doors.Detection
             {
                 if (!rdb_DWDD1.Checked && !rdb_DWDD3.Checked)
                 {
-                    MessageBox.Show("请选择位移！", "请选择位移！", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    MessageBox.Show("请选择位移！", "请选择位移！", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
             }
             if (AddKfyInfo())
             {
-                MessageBox.Show("处理成功！", "完成", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("处理成功！", "完成", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             complete = new List<int>();
         }

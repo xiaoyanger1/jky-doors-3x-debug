@@ -56,7 +56,7 @@ namespace text.doors.Detection
         public DateTime dtnow { get; set; }
         public AirtightDetection()
         {
-
+            tc_RealTimeSurveillance.Anchor = AnchorStyles.Top;
         }
 
         public AirtightDetection(TCPClient tcpClient, string tempCode, string tempTong)
@@ -322,7 +322,7 @@ namespace text.doors.Detection
                 if (!IsSeccess)
                 {
                     //todo
-                    //MessageBox.Show("获取差压异常--气密！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    //MessageBox.Show("获取差压异常--气密！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 //lbl_dqyl.Text = value.ToString();
@@ -333,7 +333,7 @@ namespace text.doors.Detection
                     double yl = _tcpClient.GetZYYBYLZ(ref IsSeccess, "ZYKS");
                     if (!IsSeccess)
                     {
-                        //  MessageBox.Show("获取正压预备异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                        //  MessageBox.Show("获取正压预备异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     lbl_setYL.Text = yl.ToString();
@@ -343,7 +343,7 @@ namespace text.doors.Detection
                     double yl = _tcpClient.GetZYYBYLZ(ref IsSeccess, "FYKS");
                     if (!IsSeccess)
                     {
-                        // MessageBox.Show("获取负压开始异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                        // MessageBox.Show("获取负压开始异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     lbl_setYL.Text = "-" + yl.ToString();
@@ -371,7 +371,7 @@ namespace text.doors.Detection
                 if (!IsSeccess)
                 {
                     //todo
-                    // MessageBox.Show("获取差压压力异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    // MessageBox.Show("获取差压压力异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -394,7 +394,7 @@ namespace text.doors.Detection
             if (!IsSeccess)
             {
                 //todo
-                //  MessageBox.Show("获取差压异常--气密前十！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                //  MessageBox.Show("获取差压异常--气密前十！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -434,7 +434,7 @@ namespace text.doors.Detection
             var fsvalue = _tcpClient.GetFSXS(ref IsSeccess);
             if (!IsSeccess)
             {
-                //MessageBox.Show("获取风速异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                //MessageBox.Show("获取风速异常！", "警告！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -582,14 +582,14 @@ namespace text.doors.Detection
         {
             if (!_tcpClient.IsTCPLink)
             {
-                MessageBox.Show("未连接服务器", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("未连接服务器", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             double yl = _tcpClient.GetZYYBYLZ(ref IsSeccess, "ZYYB");
             if (!IsSeccess)
             {
-                MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             lbl_setYL.Text = yl.ToString();
@@ -600,7 +600,7 @@ namespace text.doors.Detection
             var res = _tcpClient.SetZYYB();
             if (!res)
             {
-                MessageBox.Show("正压预备异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("正压预备异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -614,7 +614,7 @@ namespace text.doors.Detection
         {
             var res = _tcpClient.Stop();
             if (!res)
-                MessageBox.Show("急停异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("急停异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         /// <summary>
@@ -629,7 +629,7 @@ namespace text.doors.Detection
             double yl = _tcpClient.GetZYYBYLZ(ref IsSeccess, "ZYKS");
             if (!IsSeccess)
             {
-                MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -655,7 +655,7 @@ namespace text.doors.Detection
             _tcpClient.SendZYKS(ref IsSeccess);
             if (!IsSeccess)
             {
-                MessageBox.Show("正压开始异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("正压开始异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -669,7 +669,7 @@ namespace text.doors.Detection
             double yl = _tcpClient.GetZYYBYLZ(ref IsSeccess, "FYYB");
             if (!IsSeccess)
             {
-                MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             lbl_setYL.Text = "-" + yl.ToString();
@@ -680,7 +680,7 @@ namespace text.doors.Detection
             var res = _tcpClient.SendFYYB();
             if (!res)
             {
-                MessageBox.Show("负压预备异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("负压预备异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -722,7 +722,7 @@ namespace text.doors.Detection
             double yl = _tcpClient.GetZYYBYLZ(ref IsSeccess, "FYKS");
             if (!IsSeccess)
             {
-                // MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                // MessageBox.Show("读取设定值异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             lbl_setYL.Text = "-" + yl.ToString();
@@ -748,7 +748,7 @@ namespace text.doors.Detection
             var res = _tcpClient.SendFYKS();
             if (!res)
             {
-                MessageBox.Show("负压开始异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("负压开始异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -781,7 +781,7 @@ namespace text.doors.Detection
             BindLevelIndex();
             if (AddQMResult())
             {
-                MessageBox.Show("处理完成！", "完成", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("处理完成！", "完成", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -904,7 +904,7 @@ namespace text.doors.Detection
 
                     if (!IsSeccess)
                     {
-                        //MessageBox.Show("正压预备结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                        //MessageBox.Show("正压预备结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     if (value == 3)
@@ -920,7 +920,7 @@ namespace text.doors.Detection
 
                     if (!IsSeccess)
                     {
-                        // MessageBox.Show("正压开始结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                        // MessageBox.Show("正压开始结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     if (value >= 15)
@@ -939,7 +939,7 @@ namespace text.doors.Detection
 
                     if (!IsSeccess)
                     {
-                        //   MessageBox.Show("负压预备结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                        //   MessageBox.Show("负压预备结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     if (value == 3)
@@ -956,7 +956,7 @@ namespace text.doors.Detection
 
                     if (!IsSeccess)
                     {
-                        MessageBox.Show("负压开始结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                        MessageBox.Show("负压开始结束状态异常", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     if (value >= 15)

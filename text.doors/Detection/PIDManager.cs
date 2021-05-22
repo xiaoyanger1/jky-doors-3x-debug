@@ -23,7 +23,7 @@ namespace text.doors.Detection
         private void Init()
         {
             if (!tcpClient.IsTCPLink)
-                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             bool IsSuccess = false;
             var P = tcpClient.GetPID("P", ref IsSuccess);
@@ -57,7 +57,7 @@ namespace text.doors.Detection
             var res = tcpClient.SendPid("P", P);
             if (!res)
             {
-                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else { MessageBox.Show("成功!"); }
 
@@ -69,7 +69,7 @@ namespace text.doors.Detection
             var res = tcpClient.SendPid("I", I);
             if (!res)
             {
-                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else { MessageBox.Show("成功!"); }
         }
@@ -80,7 +80,7 @@ namespace text.doors.Detection
             var res = tcpClient.SendPid("D", D);
             if (!res)
             {
-                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else { MessageBox.Show("成功!"); }
         }
@@ -91,7 +91,7 @@ namespace text.doors.Detection
             var res = tcpClient.SendPid("_P", p);
             if (!res)
             {
-                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else { MessageBox.Show("成功!"); }
         }
@@ -102,7 +102,7 @@ namespace text.doors.Detection
             var res = tcpClient.SendPid("_I", i);
             if (!res)
             {
-                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else { MessageBox.Show("成功!"); }
         }
@@ -113,7 +113,7 @@ namespace text.doors.Detection
             var res = tcpClient.SendPid("_D", D);
             if (!res)
             {
-                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -128,7 +128,7 @@ namespace text.doors.Detection
             var res = tcpClient.SendPid("B_P", p);
             if (!res)
             {
-                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -142,7 +142,7 @@ namespace text.doors.Detection
             var res = tcpClient.SendPid("B_I", i);
             if (!res)
             {
-                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else { MessageBox.Show("成功!"); }
         }
@@ -153,7 +153,7 @@ namespace text.doors.Detection
             var res = tcpClient.SendPid("B_D", d);
             if (!res)
             {
-                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("连接未打开暂时不能设置PID！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else {
                 MessageBox.Show("成功!");

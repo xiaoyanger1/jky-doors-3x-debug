@@ -56,7 +56,7 @@ namespace text.doors.Detection
                 values('{0}','{1}','{2}')", txt_IP.Text, txt_prot.Text, txt_mm.Text);
                     if (SQLiteHelper.ExecuteNonQuery(sql) == 0)
                     {
-                        MessageBox.Show("存储", "保存失败！", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                        MessageBox.Show("存储", "保存失败！", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {

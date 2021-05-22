@@ -39,7 +39,7 @@ namespace text.doors.Detection
         {
             if (string.IsNullOrWhiteSpace(cbb_code.Text))
             {
-                MessageBox.Show("请输入编号", " 警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("请输入编号", " 警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 return;
             }
 
@@ -47,7 +47,7 @@ namespace text.doors.Detection
 
             if (dt == null)
             {
-                MessageBox.Show("暂未查询此编号内容", " 警告", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show("暂未查询此编号内容", " 警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
